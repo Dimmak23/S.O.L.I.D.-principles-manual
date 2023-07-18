@@ -221,7 +221,7 @@ public:
 
 };
 
-class Rectangle
+class Rectangle: public TwoDSimpleShape
 {
 public:
 	Rectangle(uint16_t width, uint16_t height): TwoDSimpleShape(width, height) {}
@@ -233,7 +233,7 @@ public:
 	uint16_t GetHeight(){ return Height; }
 };
 
-class Square
+class Square: public TwoDSimpleShape
 {
 public:
 	Square(uint16_t length): TwoDSimpleShape(length, length) {}
